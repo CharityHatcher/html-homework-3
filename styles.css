@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+    background: peachpuff;
+    color: navy;
+    font-family: 'DM Sans', sans-serif;
+}
+#intro {
+    background: navy;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid orange;
+}
+.card {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid navy;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 300px;
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+    .card {
+        flex: 1 1 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        flex: 1 1 45%;
+    }
+}
